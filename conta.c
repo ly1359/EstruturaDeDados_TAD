@@ -1,17 +1,19 @@
 #include "operacoes.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(){
     Conta *cb;
     int opc;
-    int num = rand() % 100;
+    srand(time(NULL));
+    int num = (rand() % 1000) + 999;
     cb = criarConta(num, 0.0f);
     printf("Sua Conta foi Inicializada!\n");
     printf("Numero da conta: %d\n", cb->numConta);
     printf("Seu saldo incial: %.2f\n", cb->saldo);
 
-    while(opc != 4){
+    while(opc != 4 || opc > 4){
         printf("----Menu Pricipal---\n");
         printf("1- Deposito \n");
         printf("2- Sacar   \n");
