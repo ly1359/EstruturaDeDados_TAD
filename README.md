@@ -6,4 +6,7 @@ Atividade de Estrutura de dados:
   3. Sacar um valor.
   4. Imprimir o saldo
 
+-Implementa métodos de lista da limguagem Python(Lista)
+
+-Implementa método de inserir e remover(lista duplamente encadeada e lista circular)
 
